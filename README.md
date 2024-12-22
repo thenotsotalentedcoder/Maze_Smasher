@@ -116,30 +116,12 @@ Features:
 #### 3. Pathfinding Implementation
 
 ##### A* Algorithm
-```pseudocode
-function A*(startNode, targetNode):
-    openSet = PriorityQueue()
-    closedSet = Set()
-    openSet.add(startNode)
-    
-    while openSet not empty:
-        current = openSet.removeFirst()
-        if current == targetNode:
-            return RetracePath(startNode, targetNode)
-            
-        for neighbor in current.neighbors:
-            if neighbor not walkable or in closedSet:
-                continue
-                
-            newCost = current.gCost + GetDistance(current, neighbor)
-            if newCost < neighbor.gCost or neighbor not in openSet:
-                neighbor.gCost = newCost
-                neighbor.hCost = GetDistance(neighbor, targetNode)
-                neighbor.parent = current
-                
-                if neighbor not in openSet:
-                    openSet.add(neighbor)
-```
+- Uses a combination of actual distance (g-cost) and estimated distance to target (h-cost)
+- Maintains two lists: open set (nodes to explore) and closed set (explored nodes)
+- Prioritizes nodes with lowest total cost (f-cost = g-cost + h-cost)
+- Efficiently finds optimal path by exploring most promising nodes first
+- Uses parent references to reconstruct the final path
+- More efficient than Dijkstra's for directed searches due to heuristic guidance
 
 ##### Dijkstra's Algorithm Implementation
 - Priority queue-based exploration
