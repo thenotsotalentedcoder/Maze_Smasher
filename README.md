@@ -150,6 +150,6 @@ Features:
 
 ## 👥 Authors
 
-- **Malik Muzammil** - Game mode 1 (Race Mode)
+- **Malik Muzammil** - Game mode 2 (Race Mode)
 - **Saim & Abdul Rehman** - Game mode 3 (Player vs Enemy)
 - **Muhammad Taha** - Game mode 1 (Visualizer)
