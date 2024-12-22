@@ -151,5 +151,5 @@ Features:
 ## 👥 Authors
 
 - **Malik Muzammil** - Game mode 1 (Race Mode)
-- **Saim & Abdul Rehman** - Ganme mode 3 (Player vs Enemy)
+- **Saim & Abdul Rehman** - Game mode 3 (Player vs Enemy)
 - **Muhammad Taha** - Game mode 1 (Visualizer)
